@@ -1,0 +1,48 @@
+
+/* Overall styling for the navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  ul {
+    display: flex; /* Align list items in a row */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    justify-content: center; /* Center the list items horizontally */
+  }
+  
+  li {
+    margin: 0 15px; /* Add space between list items */
+  }
+  
+  li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color to white */
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  li a:hover {
+    color: #f1c40f; /* Change color on hover */
+  }
+  
+  li a:active {
+    color: #e67e22; /* Color change when link is clicked */
+  }
+  
+  /* Optional: Make the navigation responsive for smaller screens */
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column; /* Stack the list items vertically */
+      align-items: center; /* Center align the list items */
+    }
+  
+    li {
+      margin: 10px 0; /* Add vertical space between items */
+    }
+  }
+  
